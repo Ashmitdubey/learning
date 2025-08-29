@@ -1,3 +1,64 @@
-.hghg {
-    display: unset;
+.box {
+    /* border: 2px solid transparent; */
+    padding: 50px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: box-shadow 0.5s ease;
+  &:hover {
+    box-shadow: inset 0px 0px 20px #d8d8d8;
+    /* background: linear-gradient(70deg,#7d9cf9 0%, #f884cd 100%); */
+  }
+    &:active {
+        background-color: #e7e7e7;
+
+    }
+    
+}
+
+.table {
+    display: none;
+}
+
+.box:hover .box1 {
+    display: none;
+}
+
+.box:hover .table {
+
+    display: inline
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    /* padding: px; */
+    gap: 10px;
+}
+
+.container {
+    border: 2px solid #e9e9e9 ;
+    padding: 30px;
+    display: flex;
+    /* align-items: center; */
+    /* background: url(https://wallpapers.com/images/featured/beautiful-scenery-wnxju2647uqrcccv.jpg), rgba(255, 255, 255, 0.066); */
+    background-size: cover;
+    background-blend-mode: multiply;
+    backdrop-filter: blur(15px);
+    gap: 1rem;
+    position: relative;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.svg {
+    position: absolute;
+    top: -10px;
+    right: 10px;
 }
