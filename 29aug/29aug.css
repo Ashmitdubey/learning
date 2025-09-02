@@ -15,7 +15,9 @@
     }
     
 }
-
+.container-chllng button {
+    cursor: pointer;
+}
 .table {
     display: none;
 }
@@ -27,15 +29,6 @@
 .box:hover .table {
 
     display: inline
-}
-
-.list{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    list-style: none;
-    /* padding: px; */
-    gap: 10px;
 }
 
 .container {
@@ -62,3 +55,62 @@
     top: -10px;
     right: 10px;
 }
+
+.container-chllng{
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 460px;
+    align-items: cent;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.container-chllng img{
+   border-radius: 10px;
+}
+
+.container-chllng button{
+    border-radius: 10px;
+}
+.lastDiv {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last{
+    border: none;
+    align-items: center;
+    color: rgb(57, 89, 249);
+    padding: 5px 10px;
+    background-color: rgb(217, 217, 250);
+    width: 100px;
+    height: 40px;
+}
+
+.nature .lake {
+    border: none;
+}
+
+.outlinesBtn button {
+    border: 1px solid rgb(168, 168, 168);
+}
+ul{
+    padding: 25px;
+    display: flex;
+    list-style: none;
+    /* padding: px; */
+    gap: 30px; 
+} 
+ nav{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+ }
+
+ :root{
+    --primary-color: #420202;
+    --text-color: white;
+    --secondar-color: rgb(137, 1, 1);
+ }
+
