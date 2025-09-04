@@ -1,0 +1,39 @@
+.container{
+    width: 1000px;
+    height: 600px;
+    background-color: blue;
+    position: relative;
+    overflow: hidden;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* transform: translateX(-50%); */
+    animation: animatey 2s infinite ease-out alternate, animatex 3s linear infinite;
+}
+
+@keyframes animatey {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 496px;
+    }
+}
+
+
+@keyframes animatex {
+    from{
+        left: -10%;
+    }
+    to{
+        left: 1000px;
+    }
+}
