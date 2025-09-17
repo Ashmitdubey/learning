@@ -84,7 +84,7 @@ comment
 
 // for (let x = 0; x < 10; x++) {
 //    console.log(a + x); 
-   
+
 
 
 // let obj = {
@@ -98,9 +98,60 @@ comment
 //    console.log(key, element);  
 // }
 
-let i=5;
-while(10>i){
-   i++;
-    console.log(i);
-   //  i--;
-}
+// let i=5;
+// while(10>i){
+//    i++  ;
+//     console.log(i);
+//    //  i--;
+// }
+
+// let random = Math.random();
+// let a = prompt("Enter first number");
+// let b = prompt("Enter second number");
+// let c = prompt("Enter operation");
+
+// let obj = {
+//    "+": "-",
+//    "*": "+",
+//    "-": "/",
+//    "/": "**",
+// }
+
+// if (random > 0.1) {
+//    // console.log('the result is ${a} ${c} ${b}');
+//    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+// }
+
+// else {
+//    c = obj[c];
+//    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+// }
+
+
+console.log("This is strings tutorial")
+let a = "Harry";
+console.log(a[0]);
+console.log(a[1]);
+console.log(a[2]);
+console.log(a[3]);
+console.log(a[4]);
+// console.log(a[5]);
+
+console.log(a.length)
+
+let real_name = "Harry"
+let friend = "Rohan"
+console.log("His name is " + real_name + " and his friends name is " + friend)
+console.log(`His name is ${real_name} and his friends name is ${friend}`)
+
+let b = "ShivamSh"
+console.log(b.toUpperCase())
+console.log(b.toLowerCase()) 
+console.log(b.length) 
+console.log(b.slice(1, 5)) 
+console.log(b.slice(1)) 
+
+console.log(b.replace("Sh", "77"))
+console.log(b.concat(a, "Aishwariya", "Rahul", "Priya"))
+
+console.log(b)
