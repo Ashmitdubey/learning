@@ -86,7 +86,6 @@ comment
 //    console.log(a + x); 
 
 
-
 // let obj = {
 //     name: "Ashmit",
 //     age: 22,
@@ -155,3 +154,11 @@ console.log(b.replace("Sh", "77"))
 console.log(b.concat(a, "Aishwariya", "Rahul", "Priya"))
 
 console.log(b)
+
+let m = 6
+function factorial(number) {
+    let arr = Array.from(Array(number).keys)
+    console.log(arr)
+}
+
+factorial(a)

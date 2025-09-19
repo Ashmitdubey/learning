@@ -10,7 +10,7 @@ const Button = (props) => {
         onClick={() => props.onClick && props.onClick()}
         style={{
             background: props.color ||  "blue",
-            color: "white",
+            color: "black",
             padding: "10px 20px",
             marginBottom: "10px",
             cursor: "pointer",
