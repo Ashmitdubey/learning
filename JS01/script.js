@@ -163,9 +163,21 @@ comment
 
 // factorial(a)
 console.log("script.js initializing")
-let boxes = document.getElementsByClassName("box1")
-console.log(boxes)
+// let boxes = document.getElementsByClassName("box1")
+let boxes = document.querySelector(".container").children
+// console.log(boxes)
 
-Array.from(boxes).forEach(e=>{
-    console.log(e)
-})
+function getRandomColor() {
+    let val1 = Math.ceil(0 + Math.random() * 255);
+    let val2 = Math.ceil(0 + Math.random() * 255);
+    let val3 = Math.ceil(0 + Math.random() * 255);
+    // let val2 = 126; 
+    // let val3 = 26; 
+    // let val4 = 200; 
+    return `rgb(${val1}, ${val2}, ${val3} )`
+}
+
+Array.from(boxes).forEach(function (e) {
+        e.style.backgroundColor = getRandomColor();
+        e.style.color = getRandomColor();
+    })
