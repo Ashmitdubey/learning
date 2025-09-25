@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+   
+
+   <title>Document</title>
     <style>
         .card{
             display: flex;
             border: 2px solid black;
-            width: 700px;
+            width: 900px;
         }
         .image img{
-            wid
+            width: 150px;
+            height: 100px;
+            padding: 0px;
         }
 
         .text h1{
-            p
+            padding: 0px;
+            margin: 10px;
+        }
+        .text p{
+            padding: 0;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
        <div class="card">
-        <div class="imgage">
+        <div class="image">
             <img src="https://i.ytimg.com/vi/tcQDnqRakxk/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCJ36Zj60XhC_90S5IwO-XVHpf83w" alt=""> 
         </div>
         <div class="text">
@@ -33,6 +43,31 @@
        </div>
 
     </div>
+    <div id="product-list" style="background-color: red; margin-bottom: 10px; padding: 10px;">
+    </div>
+ <script>
+    const products = [
+      { name: 'Laptop', price: 1200, inStock: true },
+      { name: 'Mouse', price: 25, inStock: false },
+      { name: 'Keyboard', price: 75, inStock: true },
+      { name: 'Monitor', price: 300, inStock: true }
+    ];
 
+    // Select the HTML element where the list will be rendered
+    const productListElement = document.getElementById('product-list');
+
+    // Map the products array to an array of HTML list item strings
+    const productListItems = products.map(product => {
+      const stockStatus = product.inStock ? 'In Stock ✅' : 'Out of Stock ❌';
+      return `
+          <strong>${product.name}</strong> - $${product.price}
+          <br>
+          <small>${stockStatus}</small>
+      `;
+    });
+
+    // Join the array of strings and set the innerHTML of the ul element
+    productListElement.innerHTML = productListItems.join('');
+  </script>
 </body>
 </html>
