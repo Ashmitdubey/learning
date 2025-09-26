@@ -15,7 +15,7 @@ function App() {
 
     const reduceNumber = () => {
         setNumber(number - 2);
-        if (number <= -20) {
+        if (number < = -20) {
           setNumber(-20);
         }
     }
