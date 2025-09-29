@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        background-color: green;
+        color: white;
+        font-size: 30px;
+    }
+</style>
 <body>
-   <script>
-    let text = ["Intializing Hacking",
-    "Reading your file...",
-    "PAssword files detected",
-    "Sending all passwords and personal files to server",
-    "Cleaning up...",
-   ]
+    <div>Intializing Hacking...</div>
+    <script>
+         const addItem = async (item)=>{
+            await randomdelay();
+            let div = document.createElement("div");
+            div.innerHTML = item;
+            document.body.append(div)
+        }
+        const randomdelay = ()=>{
+            return new promise((resolve, reject)=>{
+               timeout = 1 + 6* Math.random();
+               setTimeout(() => {
+                resolve()
+               }, timeout= 1000);
+            })
+        }
+        async function main() {
+            
+            set setInterval(() =>{
+                let last = document.body.lastElementChild;
+            }. 700);
+        }()
+        let text = ["Intializing Hacking",
+            "Reading your file...",
+            "PAssword files detected",
+            "Sending all passwords and personal files to server",
+            "Cleaning up...",]
 
-   for (const item of Object){
-     
-   }
-   </script> 
+        for (const item of Object) {
+            addItem(item)
+        }
+
+       
+    </script>
 </body>
-</html> 
+
+</html>
